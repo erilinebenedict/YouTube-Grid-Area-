@@ -1,0 +1,119 @@
+
+ body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: rgb(201, 8, 8);
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Impact;
+}
+.main{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 70% 30%;
+    height: 95vh;
+    margin: 1px;
+    box-sizing: border-box;
+}
+/* .main-text{
+    height: 15vh;
+
+} */
+.main-video{
+    background-color: black;
+    height: 90vh;
+}
+.main-text{
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px;
+}
+.loop > div{
+    display: block;
+}
+.child{
+    display: grid;
+    grid-gap: 5px;
+    overflow-y: scroll;
+}
+.child > div{
+    display: flex;
+    ;
+    height: 18vh;
+    border: black solid 1px;
+
+}
+.text{
+    background-color: white;
+    font-family: Tahoma;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+.video{
+    background-color: black;
+    width: 90%;
+    
+
+}
+div .video, .text{
+    width: 100%;
+}
+@media (max-width:570.98px){
+    .main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .child{
+        padding: 10px;
+        font-size: 13px;
+    }
+    .child > div{
+        height: 17vh;
+        
+       
+/*         border: black solid 0.2px; */
+    }
+    .main-video{
+        background-color: black;
+/*         height: 10vh; */
+    }
+    .text{
+        padding-right: 10px;
+    }
+/*     .main{
+        grid-gap: 0px;
+    } */
+}
+@media (max-width:1024px){
+    .main-video{height: 30vh;
+    }
+    .main-text{
+        height: 5vh;
+    }
+    .child{
+        padding: 10px;
+    }
+    .child>div{
+        height: 15vh;
+        padding-right: 10px;
+    }
+}
+/* @media (width: 768px){
+    .main-video{height: 45vh;
+    }
+
+    .child{
+        padding: 10px;
+    }
+
+    .child>div{
+        height: 20vh;
+        padding-right: 10px;
+
+    }
+} */
